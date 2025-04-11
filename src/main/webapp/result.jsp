@@ -3,14 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Text Quest - Result</title>
+  <title>Game Result</title>
 </head>
 <body>
-<h1>Result for <c:out value="${playerName}"/></h1>
-<h2><c:out value="${resultMessage}"/></h2>
-<p>Games played: <c:out value="${gameCounter}"/></p>
-<form action="${pageContext.request.contextPath}/result" method="post">
-  <button type="submit">Start Over</button>
+<h1>Game Over</h1>
+<p>Thank you for playing, <c:out value="${playerName}" />!</p>
+<p><strong><c:out value="${resultMessage}" /></strong></p>
+<p>Total games played: <c:out value="${gameCounter}" /></p>
+
+<form action="${pageContext.request.contextPath}/start" method="get">
+  <button type="submit">Play Again</button>
 </form>
 </body>
 </html>
