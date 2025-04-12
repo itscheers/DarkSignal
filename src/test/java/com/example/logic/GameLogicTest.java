@@ -59,5 +59,6 @@ public class GameLogicTest {
 
         assertTrue(state.isGameOver());
         assertEquals("Defeat. The story ends here.", state.getResultMessage());
+        //everything is good
     }
 }
